@@ -1,1 +1,233 @@
-/* Add you CSS here */
+/* Hero section styles */
+.hero {
+  /* Light green background color for eco-friendly feel */
+  background-color: #e0f7e9;
+  /* Eco-friendly background image (public domain illustration) */
+  background-image: url('https://cdn.pixabay.com/photo/2017/01/31/13/14/earth-2021104_1280.png');
+  background-repeat: no-repeat;
+  background-size: 120px 120px; /* Adjust size as needed */
+  background-position: right bottom;
+  padding: 40px 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 10px; /* Rounded corners for a friendly look */
+}
+
+/* Headline style */
+.hero h2 {
+  color: #2e7d32; /* Dark green for eco theme */
+  margin-bottom: 10px;
+}
+
+/* Subtext style */
+.hero p {
+  color: #555;
+  font-size: 1.1em;
+}
+
+/* Style for skip link (for accessibility) */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  background: #fff;
+  color: #2e7d32;
+  padding: 8px;
+  z-index: 100;
+}
+.skip-link:focus {
+  left: 10px;
+  top: 10px;
+  width: auto;
+  height: auto;
+  font-size: 1em;
+  border: 2px solid #2e7d32;
+  border-radius: 4px;
+}
+
+/* Header styles */
+header {
+  background-color: #c8e6c9; /* Light green for eco-friendly look */
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 2px solid #81c784;
+}
+
+/* Logo style */
+.logo {
+  margin: 0;
+  color: #2e7d32;
+  font-size: 2em;
+}
+
+/* Navigation styles */
+.main-nav ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center; /* Center the navigation */
+  gap: 20px; /* Space between links */
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #388e3c;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+  background-color: #a5d6a7; /* Light highlight on hover */
+  color: #1b5e20;
+}
+
+/* Eco-Friendly Destinations cards section */
+.eco-cards {
+  display: flex; /* Place cards in a row */
+  justify-content: center; /* Center the cards */
+  gap: 20px; /* Space between cards */
+  margin: 30px 0;
+  flex-wrap: wrap; /* Allow cards to wrap on small screens */
+}
+
+/* Individual card styles */
+.card {
+  background-color: #f1f8e9; /* Light green background */
+  border: 1px solid #b2dfdb; /* Soft border */
+  border-radius: 8px; /* Rounded corners */
+  width: 220px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06); /* Soft shadow */
+}
+
+/* Card image styles */
+.card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover; /* Crop image to fit */
+  border-radius: 6px;
+}
+
+/* Card title */
+.card h3 {
+  margin: 12px 0 8px 0;
+  color: #388e3c;
+}
+
+/* Card text */
+.card p {
+  font-size: 0.98em;
+  color: #444;
+}
+
+/* Make card images responsive */
+.eco-cards img {
+  max-width: 100%; /* Image will not be wider than its container */
+  height: auto;    /* Image keeps its aspect ratio */
+  display: block;  /* Removes small gaps below images */
+  margin-bottom: 10px; /* Adds space below images */
+}
+
+/* Add some spacing and background to each card */
+.eco-cards .card {
+  background: #f9f9f9;
+  padding: 16px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-sizing: border-box; /* Makes padding included in width */
+}
+
+/* Make text easy to read */
+.eco-cards h3 {
+  font-size: 1.2em;
+  margin-top: 0;
+}
+
+.eco-cards p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* Media query for small screens (phones) */
+@media (max-width: 600px) {
+  /* Stack cards vertically and add more padding */
+  .eco-cards {
+    display: block;
+    padding: 10px;
+  }
+  .eco-cards .card {
+    margin-bottom: 24px;
+    padding: 18px;
+  }
+  .eco-cards h3 {
+    font-size: 1.3em;
+  }
+  .eco-cards p {
+    font-size: 1.05em;
+  }
+}
+
+/* Media query for medium and large screens (tablets and desktops) */
+@media (min-width: 700px) {
+  /* Show cards side by side */
+  .eco-cards {
+    display: flex;
+    gap: 24px; /* Space between cards */
+    justify-content: center;
+    padding: 20px 0;
+  }
+  .eco-cards .card {
+    flex: 1 1 0;
+    max-width: 350px;
+    margin-bottom: 0;
+    padding: 22px;
+  }
+  .eco-cards h3 {
+    font-size: 1.4em;
+  }
+  .eco-cards p {
+    font-size: 1.1em;
+  }
+}
+
+/* Style for the call to action section */
+.call-to-action {
+  text-align: center;           /* Center the content */
+  background: #e0f7fa;          /* Light background color */
+  padding: 32px 16px;           /* Space around the content */
+  margin: 32px 0;               /* Space above and below the section */
+  border-radius: 12px;          /* Rounded corners */
+}
+
+/* Style for the call to action message */
+.call-to-action p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* Style for the oval-shaped button */
+.cta-button {
+  background-color: #00796b;    /* Button color */
+  color: #fff;                  /* Text color */
+  border: none;                 /* No border */
+  padding: 12px 36px;           /* Makes the button oval */
+  border-radius: 999px;         /* Fully rounded for oval shape */
+  font-size: 1.1em;
+  cursor: pointer;              /* Shows pointer on hover */
+  transition: background 0.2s;  /* Smooth color change on hover */
+}
+
+/* Button hover effect */
+.cta-button:hover {
+  background-color: #004d40;
+}
+
+
